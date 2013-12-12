@@ -1,0 +1,34 @@
+<%= title( @topic.title ) %>
+<%= link_to 'Back to Feed Index', topics_path %>
+
+		<h2>
+			<%= @topic.title %>
+		</h2>
+		<p>
+			<%= @topic.description %>
+		</p>
+		<p>
+			By <%= @topic.user.email %>, Posted <%= nice_short_date( @topic.created_at ) %>
+
+	    <% if user_signed_in? and current_user.id == @topic.user.id %>
+  				<%= link_to 'Edit', edit_topic_path(@topic) %> or
+  				<%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: 'Are you sure you want to delete the topic?'} %>
+  		<% end %>
+        </p>
+
+		<h4>Comments</h4>
+		<div id="feeds-list">
+			<%= render @topic.feeds %>
+		</div>
+
+		<% if user_signed_in? %>
+			<h4>Add Comments<h4>
+			<div id="feeds-form">
+				<%= render "feeds/form" %>
+			</div>
+		<% end %>
+ 
+		
+	</div>
+</div>
+

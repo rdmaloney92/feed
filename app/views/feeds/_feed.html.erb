@@ -1,0 +1,7 @@
+<blockquote>
+  	<p><%= feed.text %></p>
+	<small><%= feed.user.email %>
+	  <% if user_signed_in? and current_user.id == feed.user.id %>
+				<%= link_to "Delete", topic_path(feed), method: :delete, data: { confirm: 'Are you sure you want to delete the topic?'} %>
+		<% end %>
+</blockquote>

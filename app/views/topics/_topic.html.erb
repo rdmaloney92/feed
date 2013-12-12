@@ -1,0 +1,17 @@
+<article>
+	<h2><%= link_to topic.title, topic_path(topic) %></h2>
+	<p><%= "Description: " + topic.description %></p>
+	<p>
+		Posted: <%= nice_short_date( topic.created_at ) %>
+		<br>
+	</p>
+	<p>
+	  <h4>Comments </h4>
+	<% topic.feeds.each do |feed| %>
+		<%= topic.user.first_name %> :
+		<%= feed.text %><br>
+	<% end %>
+	</p>
+</article>
+
+<hr>

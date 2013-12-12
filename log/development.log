@@ -1,0 +1,747 @@
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:31:31 -0700
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `sqlite3_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:92:in `clear_cache!'
+  activerecord (4.0.0) lib/active_record/railtie.rb:194:in `block (3 levels) in <class:Railtie>'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:387:in `_run__2967948940179486239__prepare__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:62:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:31:31 -0700
+
+LoadError (cannot load such file -- /Users/RyanMaloney/Downloads/classy/config/routes.rb):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `block in load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:213:in `load_dependency'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `call'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.0.0) lib/rails/application/finisher.rb:81:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:407:in `_run__2967948940179486239__prepare__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:62:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 11:31:44 -0700
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/sqlite3_adapter.rb:24:in `sqlite3_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__3886161824550775845__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/RyanMaloney/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC
+  [1m[36mFeed Load (18.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered topics/_topic.html.erb (149.5ms)
+  Rendered topics/index.html.erb within layouts/application (283.9ms)
+Completed 200 OK in 582ms (Views: 486.4ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC
+  [1m[36mFeed Load (0.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered topics/_topic.html.erb (2.2ms)
+  Rendered topics/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:32:43 -0700
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-12-12 11:32:45 -0700
+Processing by TopicsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered topics/_form.html.erb (230.5ms)
+  Rendered topics/new.html.erb within layouts/application (232.2ms)
+Completed 200 OK in 243ms (Views: 240.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/topics/20" for 127.0.0.1 at 2013-12-12 11:32:57 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "20"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFeed Load (0.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered feeds/_feed.html.erb (5.0ms)
+  Rendered feeds/_form.erb (2.8ms)
+  Rendered topics/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/topics/51" for 127.0.0.1 at 2013-12-12 11:33:04 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"51"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "51"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Topic with id=51):
+  app/controllers/topics_controller.rb:33:in `destroy'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started DELETE "/topics/51" for 127.0.0.1 at 2013-12-12 11:33:44 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"51"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/topics_controller.rb:34:in `destroy'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started DELETE "/topics/51" for 127.0.0.1 at 2013-12-12 11:33:46 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"51"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/topics_controller.rb:34:in `destroy'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started DELETE "/topics/51" for 127.0.0.1 at 2013-12-12 11:33:58 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"51"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 82ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC[0m
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered topics/_topic.html.erb (25.1ms)
+  Rendered topics/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:33:59 -0700
+
+
+Started GET "/topics/20" for 127.0.0.1 at 2013-12-12 11:34:02 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mTopic Load (0.4ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "20"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFeed Load (0.2ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered feeds/_feed.html.erb (5.0ms)
+  Rendered feeds/_form.erb (2.8ms)
+  Rendered topics/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/topics/50" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC[0m
+  [1m[35mFeed Load (0.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered topics/_topic.html.erb (2.3ms)
+  Rendered topics/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:04 -0700
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:34:37 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC[0m
+  [1m[35mFeed Load (0.2ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered topics/_topic.html.erb (30.4ms)
+  Rendered topics/index.html.erb within layouts/application (93.7ms)
+Completed 200 OK in 113ms (Views: 99.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:34:38 -0700
+
+
+Started GET "/topics/20" for 127.0.0.1 at 2013-12-12 11:34:39 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "20"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFeed Load (0.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered feeds/_feed.html.erb (4.0ms)
+  Rendered feeds/_form.erb (2.7ms)
+  Rendered topics/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/topics/50" for 127.0.0.1 at 2013-12-12 11:34:41 -0700
+Processing by TopicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U=", "id"=>"50"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "50"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Topic with id=50):
+  app/controllers/topics_controller.rb:33:in `destroy'
+
+
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/RyanMaloney/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/topics/20" for 127.0.0.1 at 2013-12-12 11:35:28 -0700
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFeed Load (0.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered feeds/_feed.html.erb (2.8ms)
+  Rendered feeds/_form.erb (2.6ms)
+  Rendered topics/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:35:29 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC[0m
+  [1m[35mFeed Load (0.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered topics/_topic.html.erb (3.1ms)
+  Rendered topics/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2013-12-12 11:35:32 -0700
+Processing by TopicsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered topics/_form.html.erb (2.4ms)
+  Rendered topics/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:35:34 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC
+  [1m[36mFeed Load (0.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered topics/_topic.html.erb (2.2ms)
+  Rendered topics/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bjc3trYOyiRZydbD3TKACEOgw2JL0PHJF+KlGO0wf9U="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+Processing by TopicsController#index as HTML
+  [1m[35mTopic Load (0.3ms)[0m  SELECT "topics".* FROM "topics" ORDER BY created_at DESC
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?[0m  [["topic_id", 20]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered topics/_topic.html.erb (5.3ms)
+  Rendered topics/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/feeds.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/feeds.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 11:35:39 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-12 11:35:42 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2013-12-12 11:35:47 -0700
+Processing by TopicsController#index as HTML
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" ORDER BY created_at DESC[0m
+  [1m[35mFeed Load (0.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."topic_id" = ?  [["topic_id", 20]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered topics/_topic.html.erb (2.4ms)
+  Rendered topics/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.4ms)
